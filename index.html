@@ -1,294 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arun Kumar A R</title>
-    <link rel="icon" href="https://i.ibb.co/zRsTj3p/Frame-1-37.png">
-
-
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" class="stylesheet">
-</head> 
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arun Kumar A R — Unity Developer</title>
+  <link rel="icon" href="https://i.ibb.co/zRsTj3p/Frame-1-37.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
 <body>
 
-    <!-------------------------- Header Area -------------------------->
-    <header class="header-area">
-        <div class="container">
-            <div class="header">
-               
-                <a href="" class="logo">
-                    <img src="files/signaturecropped.png" alt="" class="signature">
-                    <i class="fa fa-bolt"></i>
-                </a>
-                   
-                <ul class="navbar">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                
-                <div class="menu_icon">
-                    <i class="fa fa-bars"></i>
-                </div>
-
-            </div>
-        </div> 
-    </header>
- 
-    <!-------------------------- Home Page -------------------------->
-    <div class="FirstElement" id="home">
-        <div class="profile-photo">
-            <img src="files/photo!!.jpg" alt="profile picture">
-        </div>
-        <div class="profile-text">
-            <h5>Hi I'm </h5><br>
-            <h1>Arun Kumar A R</h1><br>
-            <p>I'm a passionate and aspiring game developer with a strong desire to create innovative solutions and push the boundaries of technology.With a deep love for coding and problem-solving, I am constantly seeking opportunities to learn and grow in this ever-evolving field</p>
-            
-            <div class="btn-group">
-                <a href="files/Resume.pdf" class="btn   active">Download CV</a>
-                <a href="mailto:arunakar47@gmail.com" class="btn">Contact</a>
-            </div>
-
-            <div class="social">
-                <a href="mailto:arunakar47@gmail.com"><i class="fa fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/arun-kumar-a-r-0568b01a1/"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </div>
+  <!-- NAV -->
+  <header class="header-area" id="header">
+    <div class="container">
+      <nav class="header">
+        <a href="#home" class="logo">
+          <img src="files/signaturecropped.png" alt="Arun Kumar signature" class="signature">
+          <i class="fa fa-bolt" aria-hidden="true"></i>
+        </a>
+        <ul class="navbar" id="navbar">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="menu_icon" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+          <i class="fa fa-bars"></i>
+        </button>
+      </nav>
     </div>
+  </header>
 
-        <!-------------------------- About Section -------------------------->
-    <section class="about-area" id="about">
-        <div class="container">
-            <div class="about">
-                
-                <div class="about-content">
-                    <h4>About Me</h4>
-                    <ul>
-                      <li>I am a passionate and creative unity developer with 5+ years of experience in developing immersive and engaging games and applications for various platforms. I am always eager to learn new things and explore new possibilities in game/application development.</li>
-                      <li>I have worked on projects involving AR and VR. I have a strong belief in the value of continuous learning and staying adaptable in the ever-evolving world of software engineering.</li>
-                      <li>I am always eager to learn new things and explore new possibilities in game/application development. Feel free to explore my work and get in touch if you have any questions or opportunities to collaborate. </li>
-                      <li>Demonstrated ability to own end-to-end project delivery, apply best coding practices, and rapidly adopt new technologies. Delivered high-impact solutions for enterprise clients including Honeywell, KidZania, Emcode and MetaGP. </li>
-                    </ul>
-                </div>
-                                  
-                <div class="about-skills">
-                    <ul>
-                        <li>Name : Arun Kumar A R</li>
-                        <li>Age : 28</li>     
-                        <li>From : India</li>
-                        <li>Email : arunakar47@gmail.com</li>
-                        <li>Availabiltiy : Fulltime</li>
-                        <li>Experience : 5+yr</li>
-                    </ul>
-                </div>
-            </div>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-text" data-reveal="left">
+          <span class="hero-eyebrow">Unity Developer · AR/VR/Game Specialist</span>
+          <h1 class="hero-name">Arun Kumar A R</h1>
+          <p class="hero-bio">5+ years crafting immersive AR/VR experiences, interactive simulations, and real-time 3D applications. From Oculus Quest to iOS AR — I build worlds people can step into.</p>
+          <div class="btn-group">
+            <a href="files/Resume.pdf" class="btn btn-primary" download>
+              <i class="fa fa-download" aria-hidden="true"></i> Download CV
+            </a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          </div>
+          <div class="social">
+            <a href="mailto:arunakar47@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/arun-kumar-a-r-0568b01a1/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
         </div>
-    </section>
-
-
-        <!-------------- Education & Internship -------------->
-    <section class="education-content" id="education">
-        <div class="container">
-            <div class="row">
-                <div class="education ">
-                    <h3 class="title">Education</h3>
-                    <div class="row">
-                        <div class="timeline-box">
-                            <div class="timeline">
-
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">
-                                        B.Tech CCE-7.4 CGPA
-                                    </h3>
-                                    <h4 class="timeline-title">College of Engineering, Kottarakara</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> 2016-2020
-                                    </h4>
-                                </div> 
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">HSC-73%</h3>
-                                    <h4 class="timeline-title">E.V.H.S.S</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> 2014-2016
-                                    </h4>
-                                </div>
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">
-                                        SSLC-90%
-                                    </h3>
-                                    <h4 class="timeline-title"> E.V.H.S.S</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> 2011-2014
-                                    </h4>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="internship">
-                    <h3 class="title">Experience</h3>
-                    <div class="row">
-                        <div class="timeline-box">
-                            <div class="timeline">
-                                
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">
-                                        Unity developer (2D,3D and VR)
-                                    </h3>
-                                    <h4 class="timeline-title">Embright Infotech private Limited</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> March-2021 - February-2022
-                                    </h4>
-                                    
-                                </div> 
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">Unity developer (3D,AR and VR)</h3>
-                                    <h4 class="timeline-title">Tiltlabs Consultancy Services</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> February-2022 - Present
-                                    </h4>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="hero-photo" data-reveal="right">
+          <div class="photo-ring">
+            <img src="files/photo!!.png" alt="Arun Kumar A R">
+          </div>
+          <div class="hero-badge">
+            <i class="fa fa-vr-cardboard" aria-hidden="true"></i>
+            <span>AR / VR</span>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <i class="fa fa-chevron-down"></i>
+    </div>
+  </section>
 
-
-        <!-------------------------- Projects -------------------------->
-    <section class="project-content" id="projects">
-        <div class="container">
-            <div class="project-title">
-                <h4>Projects</h4>
-                <p>Discover projects, where creativity meets innovation</p>
-            </div>
-            <div class="projects">
-                <!-- 1st Project -->
-                <div class="project">
-                    <h4>MetaGP Garage Experience</h4>
-                    <p>Meta-GP is an exciting garage experience project that lets users easily explore a variety of assets related to the thrilling world of motorsports. ranging from cars and bikes to helmets and drivers</p>
-                    <a href="https://drive.google.com/drive/folders/1aA9ylbsRmAkOybql8GwyipZD-DS81F0D?usp=drive_link">
-                    <img src="files/play.png" alt="Icon" class="project-play-icon">
-                    </a>
-                </div>
-                 <!-- 2nd Project -->
-                 <div class="project">
-                    <h4>KidZania TVS Bike Studio</h4>
-                    <p>A 3D simulation software for touch interactive kiosk that kids use to design and modify the TVS Apache RR310 motorbike in 3D using various tools and features available in the simulation software and take digital certificate at end of session</p>
-                    <a href="https://drive.google.com/file/d/1kA-3et17AIqCmX80E3ierVaXlaBBa9R1/view?usp=drive_link">
-                    <img src="files/play.png" alt="Icon" class="project-play-icon">
-                    </a>
-                </div>
-                <!-- 3rd Project -->
-                <div class="project">
-                    <h4>Kidzania Mahindra Lifespaces</h4>
-                    <p>A 3D simulation software for touch interactive kiosk that kids use to build a township with given buildings, amenities and trees respectively and take certificate at end of session.</p>
-                    <a href="https://drive.google.com/file/d/1cPUWY7QsDXcoTNQCe8pn4PPePJNWEz-I/view?usp=drive_link">
-                    <img src="files/play.png" alt="Icon" class="project-play-icon">
-                    </a>
-                </div>
-                <!-- 4th Project -->
-                <div class="project">
-                    <h4>Genrobotics VR</h4>
-                    <p>An oculus quest VR App that play VR videos by a tcp socket network</p>
-                    <a href="https://drive.google.com/file/d/1OPu7KfPFFlOBTg6ycCeL3tyXDmMii8ND/view?usp=drive_link">
-                    <img src="files/play.png" alt="Icon" class="project-play-icon">
-                    </a>
-                </div>
-                <!-- 5th Project -->
-                <div class="project">
-                    <h4>Emcode Union Boat</h4>
-                    <p>A kayak race simulation game of 5 including one player kayak and 4 AI kayaks. Meters will be calculated in a time limit and display players in leaderboard based on the distance they have covered.</p>
-                    <a href="https://drive.google.com/file/d/1awdW4PyRDh1JsIrbp4Q0wqmqqygpAkQl/view?usp=drive_link">
-                    <img src="files/play.png" alt="Icon" class="project-play-icon">
-                    </a>
-                </div>
-                <!-- 6th Project -->
-                <div class="project">
-                    <h4>Fluid Simulation AR</h4>
-                    <p>A fluid simulation that simulate in transparent pipe in AR</p>
-                    <a href="https://drive.google.com/file/d/1J2EyxDj1Mdp2t4SKM12wlBHT7kBAQhsC/view?usp=drive_link">
-                    <img src="files/play.png" alt="Icon" class="project-play-icon">
-                    </a>
-                </div>
-                <!-- 7th Project -->
-                <div class="project">
-                    <h4>HoneyWell AR Scan App</h4>
-                    <p>An AR App made for Placing and interacting Equipments like gate valve,globe valve etc by QR/ Object Scan through iPad</p>
-                    <a href="https://drive.google.com/file/d/1GKPCtg_wsoX1I3UZL3BSZ_DaEW1TjEsV/view?usp=drive_link">
-                    <img src="files/play.png" alt="Icon" class="project-play-icon">
-                    </a>
-                </div>
-                <!-- 7th Project -->
-                <div class="project">
-                    <h4>Serenity Inclusys VR</h4>
-                    <p>A VR app made for mentally disabled person to experience in-world mechanics</p>
-                    <a href="https://drive.google.com/drive/folders/18os6FaD401B4ZbGnZgVvtngPfdV5IOrH?usp=drive_link">
-                    <img src="files/play.png" alt="Icon" class="project-play-icon">
-                    </a>
-                </div>
-            </div>
+  <!-- ABOUT -->
+  <section class="about-area section" id="about">
+    <div class="container">
+      <div class="section-label">Who I am</div>
+      <div class="about-grid">
+        <div class="about-content" data-reveal="left">
+          <h2 class="section-title">About Me</h2>
+          <p>I'm a passionate Unity developer specialising in AR, VR, and interactive 3D applications. Over 5+ years I've shipped high-profile experiences for clients like Honeywell, KidZania, and GenRobotics — across platforms from Oculus Quest to WebGL.</p>
+          <p>I care deeply about performance, immersion, and the small interactions that make users feel something. Whether it's physics-based VR puzzles, real-time AR overlays, or touch-screen kiosks for kids, I approach every project as a craft problem.</p>
         </div>
-    </section>
-
-        <!-------------------------- Contact Me -------------------------->
-
-    <section class="contact-content" id="contact">
-        <div class="container">
-            <div class="contact-title">
-                <h4>Contact Me</h4>
+        <div class="about-info" data-reveal="right">
+          <dl class="info-list">
+            <div class="info-item">
+              <dt><i class="fa fa-user" aria-hidden="true"></i> Name</dt>
+              <dd>Arun Kumar A R</dd>
             </div>
-            <div class="contact">
-                <div class="about-skills">
-                    <ul>
-                        <li>Phone : +91-7034677372</li>
-                        <li>Email : arunakar47@gmail.com</li>
-                    </ul>
-                </div>
-                <!--<form name="submitToGoogleSheet">
-                    <input type="text" name="NAME" placeholder="Name" required>
-                    <input type="email" name="EMAIL" placeholder="Email" required>
-                    <input type="text" name="SUBJECT" placeholder="Subject">
-                    <textarea name="MESSAGE" placeholder="Message"></textarea>
-                    <input type="submit" value="Send Message" class="submit">
-                </form>
-                <span id="msg"></span>
-                -->
+            <div class="info-item">
+              <dt><i class="fa fa-map-marker-alt" aria-hidden="true"></i> Location</dt>
+              <dd>Kollam, Kerala, India</dd>
             </div>
+            <div class="info-item">
+              <dt><i class="fa fa-envelope" aria-hidden="true"></i> Email</dt>
+              <dd><a href="mailto:arunakar47@gmail.com">arunakar47@gmail.com</a></dd>
+            </div>
+            <div class="info-item">
+              <dt><i class="fa fa-briefcase" aria-hidden="true"></i> Experience</dt>
+              <dd>5+ Years</dd>
+            </div>
+            <div class="info-item">
+              <dt><i class="fa fa-circle-check" aria-hidden="true"></i> Availability</dt>
+              <dd><span class="badge-available">Open to work</span></dd>
+            </div>
+          </dl>
         </div>
-    </section>
-        
-    <!-------------------------- JS -------------------------->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="script.js"></script>
-    
-    <!-------------------------- Footer section -------------------------->
-   <footer class="footer">
-    <small class="message">Thanks for visiting and Have a nice day</small>
-    <small class="copyright">&copy; Copyright 2023. All rights reserved.</small>
-   </footer>
+      </div>
+    </div>
+  </section>
 
+  <!-- SKILLS -->
+  <section class="skills-area section" id="skills">
+    <div class="container">
+      <div class="section-label">What I use</div>
+      <h2 class="section-title centered">Technical Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card" data-reveal="up">
+          <div class="skill-icon"><i class="fa fa-gamepad" aria-hidden="true"></i></div>
+          <h3>Unity & Engine</h3>
+          <ul>
+            <li>Scene Management & Scripting</li>
+            <li>UI/UX · Animation · Particle Systems</li>
+            <li>Shader Graph · VFX Graph</li>
+            <li>URP · HDRP · Built-in pipelines</li>
+            <li>Post-processing & Lighting</li>
+          </ul>
+        </div>
+
+        <div class="skill-card" data-reveal="up">
+          <div class="skill-icon"><i class="fa fa-vr-cardboard" aria-hidden="true"></i></div>
+          <h3>AR / VR</h3>
+          <ul>
+            <li>Oculus Quest 2 / Pro</li>
+            <li>AR Foundation · XR Interaction Toolkit</li>
+            <li>Photogrammetry (MeshRoom)</li>
+            <li>TCP Socket-based Video Streaming</li>
+            <li>JWT Auth & Asset Bundles</li>
+          </ul>
+        </div>
+
+        <div class="skill-card" data-reveal="up">
+          <div class="skill-icon"><i class="fa fa-code" aria-hidden="true"></i></div>
+          <h3>Programming</h3>
+          <ul>
+            <li>C# · C++ · JavaScript</li>
+            <li>OOP · Delegates · Events · Coroutines</li>
+            <li>JSON Serialization</li>
+            <li>HTML · CSS</li>
+            <li>Git version control</li>
+          </ul>
+        </div>
+
+        <div class="skill-card" data-reveal="up">
+          <div class="skill-icon"><i class="fa fa-mobile-alt" aria-hidden="true"></i></div>
+          <h3>Platforms</h3>
+          <ul>
+            <li>Android · iOS · Mac</li>
+            <li>Windows Standalone · WebGL</li>
+            <li>Oculus Quest 2 / Pro</li>
+          </ul>
+        </div>
+
+        <div class="skill-card" data-reveal="up">
+          <div class="skill-icon"><i class="fa fa-cube" aria-hidden="true"></i></div>
+          <h3>3D & Media</h3>
+          <ul>
+            <li>Blender (Modeling & Optimization)</li>
+            <li>SpeedTree</li>
+            <li>DaVinci Studio · Audacity</li>
+            <li>CPU & GPU Profiling</li>
+          </ul>
+        </div>
+
+        <div class="skill-card" data-reveal="up">
+          <div class="skill-icon"><i class="fa fa-robot" aria-hidden="true"></i></div>
+          <h3>Other Tools</h3>
+          <ul>
+            <li>ChatGPT · Merlin (AI-assisted dev)</li>
+            <li>AWS Integration</li>
+            <li>Bluetooth Peripheral Integration</li>
+            <li>Full-cycle App Development</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION & EXPERIENCE -->
+  <section class="education-area section" id="education">
+    <div class="container">
+      <div class="section-label">Background</div>
+      <div class="timeline-columns">
+
+        <div class="timeline-col" data-reveal="left">
+          <h2 class="section-title">Education</h2>
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <h3>B.Tech — Computer Science & Engineering</h3>
+                <span class="tl-place">College of Engineering, Kottarakara</span>
+                <span class="tl-date"><i class="fa fa-calendar" aria-hidden="true"></i> 2016 – 2020</span>
+                <span class="tl-meta">CGPA: 7.4</span>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <h3>HSC — 73%</h3>
+                <span class="tl-place">E.V.H.S.S</span>
+                <span class="tl-date"><i class="fa fa-calendar" aria-hidden="true"></i> 2014 – 2016</span>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <h3>SSLC — 90%</h3>
+                <span class="tl-place">E.V.H.S.S</span>
+                <span class="tl-date"><i class="fa fa-calendar" aria-hidden="true"></i> 2011 – 2014</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-col" data-reveal="right">
+          <h2 class="section-title">Experience</h2>
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-dot active"></div>
+              <div class="tl-content">
+                <h3>Unity Developer — 3D, AR & VR</h3>
+                <span class="tl-place">Tiltlabs Consultancy Services, Trivandrum</span>
+                <span class="tl-date"><i class="fa fa-calendar" aria-hidden="true"></i> Feb 2022 – Present</span>
+                <p class="tl-desc">Built immersive VR training simulations, AR scan apps, interactive kiosks, and multi-platform games for clients including Honeywell, KidZania, and GenRobotics.</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <h3>Unity Developer — 2D, 3D & VR</h3>
+                <span class="tl-place">Embright Infotech Pvt Ltd, Trivandrum</span>
+                <span class="tl-date"><i class="fa fa-calendar" aria-hidden="true"></i> Mar 2021 – Feb 2022</span>
+                <p class="tl-desc">Developed VR physics simulations, educational apps for children with ASD, drag-and-drop learning mechanics, and architectural visualisation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects-area section" id="projects">
+    <div class="container">
+      <div class="section-label">My work</div>
+      <h2 class="section-title centered">Projects</h2>
+      <p class="section-sub centered">Creativity meets innovation</p>
+      <div class="projects-grid">
+
+        <div class="project-card" data-reveal="up">
+          <div class="project-tag">VR · Motorsports</div>
+          <h3>MetaGP Garage Experience</h3>
+          <p>Immersive garage experience letting users explore motorsport assets — cars, bikes, helmets, drivers — with JWT auth and dynamic asset management.</p>
+          <a href="https://drive.google.com/drive/folders/1aA9ylbsRmAkOybql8GwyipZD-DS81F0D?usp=drive_link" class="project-link" target="_blank" rel="noopener">
+            View demo <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="project-card" data-reveal="up">
+          <div class="project-tag">Interactive · Kiosk</div>
+          <h3>KidZania TVS Bike Studio</h3>
+          <p>Touch-interactive kiosk simulation where kids design and modify the TVS Apache RR310 motorbike in 3D. AWS-integrated QR-based session retrieval.</p>
+          <a href="https://drive.google.com/file/d/1kA-3et17AIqCmX80E3ierVaXlaBBa9R1/view?usp=drive_link" class="project-link" target="_blank" rel="noopener">
+            View demo <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="project-card" data-reveal="up">
+          <div class="project-tag">Simulation · Kids</div>
+          <h3>KidZania Mahindra Lifespaces</h3>
+          <p>Township-building simulation for kids with drag-and-drop mechanics, dynamic scoring, and certificate generation at session end.</p>
+          <a href="https://drive.google.com/file/d/1cPUWY7QsDXcoTNQCe8pn4PPePJNWEz-I/view?usp=drive_link" class="project-link" target="_blank" rel="noopener">
+            View demo <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="project-card" data-reveal="up">
+          <div class="project-tag">VR · Streaming</div>
+          <h3>GenRobotics VR</h3>
+          <p>Oculus Quest VR app streaming VR videos over TCP socket network, built for real-time playback in industrial environments.</p>
+          <a href="https://drive.google.com/file/d/1OPu7KfPFFlOBTg6ycCeL3tyXDmMii8ND/view?usp=drive_link" class="project-link" target="_blank" rel="noopener">
+            View demo <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="project-card" data-reveal="up">
+          <div class="project-tag">Game · Simulation</div>
+          <h3>Emcode Union Boat</h3>
+          <p>Kayak racing simulation with 1 player and 4 AI boats. Real-world motion data integration, distance tracking, leaderboard, and post-processing optimisation.</p>
+          <a href="https://drive.google.com/file/d/1awdW4PyRDh1JsIrbp4Q0wqmqqygpAkQl/view?usp=drive_link" class="project-link" target="_blank" rel="noopener">
+            View demo <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="project-card" data-reveal="up">
+          <div class="project-tag">AR · Engineering</div>
+          <h3>Fluid Simulation AR</h3>
+          <p>Augmented reality fluid simulation visualising flow through transparent pipes, built for engineering education and demonstrations.</p>
+          <a href="https://drive.google.com/file/d/1J2EyxDj1Mdp2t4SKM12wlBHT7kBAQhsC/view?usp=drive_link" class="project-link" target="_blank" rel="noopener">
+            View demo <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="project-card" data-reveal="up">
+          <div class="project-tag">AR · Industrial</div>
+          <h3>Honeywell AR Scan App</h3>
+          <p>iPad AR app for placing and interacting with industrial equipment (gate valves, globe valves) via QR or object scan. Dynamic UI labelling and cross-section views.</p>
+          <a href="https://drive.google.com/file/d/1GKPCtg_wsoX1I3UZL3BSZ_DaEW1TjEsV/view?usp=drive_link" class="project-link" target="_blank" rel="noopener">
+            View demo <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="project-card" data-reveal="up">
+          <div class="project-tag">VR · Healthcare</div>
+          <h3>Serenity Inclusys VR</h3>
+          <p>VR cognitive training app for individuals with disabilities. Physics-based puzzles, progressive difficulty, motor skill refinement with SFX feedback.</p>
+          <a href="https://drive.google.com/drive/folders/18os6FaD401B4ZbGnZgVvtngPfdV5IOrH?usp=drive_link" class="project-link" target="_blank" rel="noopener">
+            View demo <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-area section" id="contact">
+    <div class="container">
+      <div class="section-label">Say hello</div>
+      <h2 class="section-title centered">Contact Me</h2>
+      <p class="section-sub centered">Open to exciting opportunities and collaborations</p>
+      <div class="contact-cards">
+        <a href="tel:+917034677372" class="contact-card">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">+91 70346 77372</span>
+        </a>
+        <a href="mailto:arunakar47@gmail.com" class="contact-card">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">arunakar47@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/arun-kumar-a-r-0568b01a1/" target="_blank" rel="noopener" class="contact-card">
+          <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">Connect with me</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2024 Arun Kumar A R. All rights reserved.</p>
+        <p class="footer-note">Designed & built with care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="script.js"></script>
 </body>
 </html>
